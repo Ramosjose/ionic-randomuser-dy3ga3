@@ -1,0 +1,13 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>pokemon</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-list>
+		<ion-item *ngFor="let poke of pokemons; index as i">
+				<img src="{{imagen}}{{i+1}}.png">
+				<h2>{{poke.name}}</h2>
+		</ion-item>
+	</ion-list>
+</ion-content>
